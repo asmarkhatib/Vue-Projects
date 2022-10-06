@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <header>
+      <h1>The First App</h1>
+    </header>
+    <main>
+      <h1>The Content</h1>
+      <section class="content">
+        <p>{{ outPutGoal() }}</p>
+        <p>
+          For more information
+          <a v-bind:href="vueLink" target="_blank">Click Here</a>.
+        </p>
+      </section>
+    </main> -->
+    
+    <!-- adding style using vue -->
+    <div id="list">
+      <div
+        class="demo"
+        :style="{backgroundColor: boxA ? 'red' : 'white'}"
+        @click="boxSelected('A')"
+      ></div>
+      <div class="demo" :class="{active: boxB}" @click="boxSelected('B')"></div>
+      <div class="demo" :class="{active: boxC}" @click="boxSelected('C')"></div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
